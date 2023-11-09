@@ -1,15 +1,14 @@
 <?php
 
 
-namespace Leadvertex\Plugin\Components\Db\ModelTest;
+namespace SalesRender\Plugin\Components\Db\ModelTest;
 
 
-use Leadvertex\Plugin\Components\Db\Components\Connector;
-use Leadvertex\Plugin\Components\Db\Components\PluginReference;
-use Leadvertex\Plugin\Components\Db\Components\TestPluginModelClass;
 use Medoo\Medoo;
 use PHPUnit\Framework\TestCase;
-use function Symfony\Component\String\b;
+use SalesRender\Plugin\Components\Db\Components\Connector;
+use SalesRender\Plugin\Components\Db\Components\PluginReference;
+use SalesRender\Plugin\Components\Db\Components\TestPluginModelClass;
 
 class findTestPluginModelClassTest extends TestCase
 {

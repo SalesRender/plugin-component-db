@@ -5,11 +5,11 @@
  * @author Timur Kasumov aka XAKEPEHOK
  */
 
-namespace Leadvertex\Plugin\Components\Db\Commands;
+namespace SalesRender\Plugin\Components\Db\Commands;
 
-use Leadvertex\Plugin\Components\Db\Components\Connector;
 use Medoo\Medoo;
 use PHPUnit\Framework\TestCase;
+use SalesRender\Plugin\Components\Db\Components\Connector;
 use Symfony\Component\Console\Tester\CommandTester;
 
 class CreateTablesCommandTest extends TestCase

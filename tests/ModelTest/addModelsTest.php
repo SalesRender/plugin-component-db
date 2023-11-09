@@ -1,26 +1,25 @@
 <?php
 
 
-namespace Leadvertex\Plugin\Components\Db\ModelTest;
+namespace SalesRender\Plugin\Components\Db\ModelTest;
 
 
 use InvalidArgumentException;
-use Leadvertex\Plugin\Components\Db\Commands\CreateTablesCommand;
-use Leadvertex\Plugin\Components\Db\Components\Connector;
-use Leadvertex\Plugin\Components\Db\Components\PluginReference;
-use Leadvertex\Plugin\Components\Db\Components\TestAnotherPluginModelClass;
-use Leadvertex\Plugin\Components\Db\Components\TestAnotherSinglePluginModelClass;
-use Leadvertex\Plugin\Components\Db\Components\TestModelClass;
-use Leadvertex\Plugin\Components\Db\Components\TestModelWithAfterAndBeforeClass;
-use Leadvertex\Plugin\Components\Db\Components\TestModelWithArrayClass;
-use Leadvertex\Plugin\Components\Db\Components\TestModelWithSubclass;
-use Leadvertex\Plugin\Components\Db\Components\TestPluginModelClass;
-use Leadvertex\Plugin\Components\Db\Components\TestSinglePluginModelClass;
-use Leadvertex\Plugin\Components\Db\Components\TestSubclass;
-use Leadvertex\Plugin\Components\Db\Exceptions\DatabaseException;
-use Leadvertex\Plugin\Components\Db\Model;
 use Medoo\Medoo;
 use PHPUnit\Framework\TestCase;
+use SalesRender\Plugin\Components\Db\Commands\CreateTablesCommand;
+use SalesRender\Plugin\Components\Db\Components\Connector;
+use SalesRender\Plugin\Components\Db\Components\PluginReference;
+use SalesRender\Plugin\Components\Db\Components\TestAnotherPluginModelClass;
+use SalesRender\Plugin\Components\Db\Components\TestAnotherSinglePluginModelClass;
+use SalesRender\Plugin\Components\Db\Components\TestModelClass;
+use SalesRender\Plugin\Components\Db\Components\TestModelWithAfterAndBeforeClass;
+use SalesRender\Plugin\Components\Db\Components\TestModelWithArrayClass;
+use SalesRender\Plugin\Components\Db\Components\TestModelWithSubclass;
+use SalesRender\Plugin\Components\Db\Components\TestPluginModelClass;
+use SalesRender\Plugin\Components\Db\Components\TestSinglePluginModelClass;
+use SalesRender\Plugin\Components\Db\Components\TestSubclass;
+use SalesRender\Plugin\Components\Db\Exceptions\DatabaseException;
 use Symfony\Component\Console\Tester\CommandTester;
 
 class addModelsTest extends TestCase

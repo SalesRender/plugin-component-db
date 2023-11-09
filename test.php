@@ -7,14 +7,14 @@
 
 require_once 'vendor/autoload.php';
 
-use Leadvertex\Plugin\Components\Db\Components\Connector;
-use Leadvertex\Plugin\Components\Db\Components\PluginReference;
-use Leadvertex\Plugin\Components\Db\Components\TestModelClass;
-use Leadvertex\Plugin\Components\Db\Components\TestPluginModelClass;
-use Leadvertex\Plugin\Components\Db\Components\TestSinglePluginModelClass;
 use Medoo\Medoo;
+use SalesRender\Plugin\Components\Db\Components\Connector;
+use SalesRender\Plugin\Components\Db\Components\PluginReference;
+use SalesRender\Plugin\Components\Db\Components\TestModelClass;
+use SalesRender\Plugin\Components\Db\Components\TestPluginModelClass;
+use SalesRender\Plugin\Components\Db\Components\TestSinglePluginModelClass;
 
-Connector::init(new Medoo([
+Connector::config(new Medoo([
     'database_type' => 'sqlite',
     'database_file' => __DIR__ . '/testDB.db'
 ]));

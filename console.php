@@ -7,9 +7,9 @@
 
 require_once 'vendor/autoload.php';
 
-use Leadvertex\Plugin\Components\Db\Commands\CreateTablesCommand;
-use Leadvertex\Plugin\Components\Db\Components\Connector;
 use Medoo\Medoo;
+use SalesRender\Plugin\Components\Db\Commands\CreateTablesCommand;
+use SalesRender\Plugin\Components\Db\Components\Connector;
 use Symfony\Component\Console\Application;
 
 Connector::config(new Medoo([

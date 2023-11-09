@@ -5,15 +5,15 @@
  * @author Timur Kasumov aka XAKEPEHOK
  */
 
-namespace Leadvertex\Plugin\Components\Db\Commands;
+namespace SalesRender\Plugin\Components\Db\Commands;
 
 
 use HaydenPierce\ClassFinder\ClassFinder;
-use Leadvertex\Plugin\Components\Db\Components\Connector;
-use Leadvertex\Plugin\Components\Db\Exceptions\DatabaseException;
-use Leadvertex\Plugin\Components\Db\Model;
-use Leadvertex\Plugin\Components\Db\ModelInterface;
-use Leadvertex\Plugin\Components\Db\PluginModelInterface;
+use SalesRender\Plugin\Components\Db\Components\Connector;
+use SalesRender\Plugin\Components\Db\Exceptions\DatabaseException;
+use SalesRender\Plugin\Components\Db\Model;
+use SalesRender\Plugin\Components\Db\ModelInterface;
+use SalesRender\Plugin\Components\Db\PluginModelInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;

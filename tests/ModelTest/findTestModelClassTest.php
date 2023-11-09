@@ -1,14 +1,14 @@
 <?php
 
 
-namespace Leadvertex\Plugin\Components\Db\ModelTest;
+namespace SalesRender\Plugin\Components\Db\ModelTest;
 
 
-use Leadvertex\Plugin\Components\Db\Components\Connector;
-use Leadvertex\Plugin\Components\Db\Components\PluginReference;
-use Leadvertex\Plugin\Components\Db\Components\TestModelClass;
 use Medoo\Medoo;
 use PHPUnit\Framework\TestCase;
+use SalesRender\Plugin\Components\Db\Components\Connector;
+use SalesRender\Plugin\Components\Db\Components\PluginReference;
+use SalesRender\Plugin\Components\Db\Components\TestModelClass;
 
 class findTestModelClassTest extends TestCase
 {

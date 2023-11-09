@@ -1,18 +1,18 @@
 {
-  "name": "leadvertex/plugin-component-db",
-  "description": "LeadVertex db component",
+  "name": "salesrender/plugin-component-db",
+  "description": "SalesRender db component",
   "type": "library",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
     {
       "name": "Timur Kasumov aka XAKEPEHOK",
-      "email": "support@leadvertex.com"
+      "email": "support@salesrender.com"
     }
   ],
   "autoload": {
     "psr-4": {
-      "Leadvertex\\Plugin\\Components\\Db\\": "src/"
+      "SalesRender\\Plugin\\Components\\Db\\": "src/"
     }
   },
   "require": {
@@ -26,7 +26,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Leadvertex\\Plugin\\Components\\Db\\": "tests/"
+      "SalesRender\\Plugin\\Components\\Db\\": "tests/"
     },
     "classmap": [
       "tests/Components/TestModelClass.php",

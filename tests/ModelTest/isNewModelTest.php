@@ -1,17 +1,17 @@
 <?php
 
 
-namespace Leadvertex\Plugin\Components\Db\ModelTest;
+namespace SalesRender\Plugin\Components\Db\ModelTest;
 
 
-use Leadvertex\Plugin\Components\Db\Commands\CreateTablesCommand;
-use Leadvertex\Plugin\Components\Db\Components\Connector;
-use Leadvertex\Plugin\Components\Db\Components\PluginReference;
-use Leadvertex\Plugin\Components\Db\Components\TestModelClass;
-use Leadvertex\Plugin\Components\Db\Components\TestPluginModelClass;
-use Leadvertex\Plugin\Components\Db\Components\TestSinglePluginModelClass;
 use Medoo\Medoo;
 use PHPUnit\Framework\TestCase;
+use SalesRender\Plugin\Components\Db\Commands\CreateTablesCommand;
+use SalesRender\Plugin\Components\Db\Components\Connector;
+use SalesRender\Plugin\Components\Db\Components\PluginReference;
+use SalesRender\Plugin\Components\Db\Components\TestModelClass;
+use SalesRender\Plugin\Components\Db\Components\TestPluginModelClass;
+use SalesRender\Plugin\Components\Db\Components\TestSinglePluginModelClass;
 use Symfony\Component\Console\Tester\CommandTester;
 
 class isNewModelTest extends TestCase

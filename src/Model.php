@@ -5,16 +5,16 @@
  * @author Timur Kasumov (XAKEPEHOK)
  */
 
-namespace Leadvertex\Plugin\Components\Db;
+namespace SalesRender\Plugin\Components\Db;
 
 
 use BadMethodCallException;
 use InvalidArgumentException;
-use Leadvertex\Plugin\Components\Db\Components\Connector;
-use Leadvertex\Plugin\Components\Db\Exceptions\DatabaseException;
-use Leadvertex\Plugin\Components\Db\Helpers\ReflectionHelper;
 use Medoo\Medoo;
 use ReflectionException;
+use SalesRender\Plugin\Components\Db\Components\Connector;
+use SalesRender\Plugin\Components\Db\Exceptions\DatabaseException;
+use SalesRender\Plugin\Components\Db\Helpers\ReflectionHelper;
 
 abstract class Model implements ModelInterface
 {

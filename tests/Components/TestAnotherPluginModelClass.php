@@ -5,11 +5,11 @@
  * @author Timur Kasumov (XAKEPEHOK)
  */
 
-namespace Leadvertex\Plugin\Components\Db\Components;
+namespace SalesRender\Plugin\Components\Db\Components;
 
 
-use Leadvertex\Plugin\Components\Db\Model;
-use Leadvertex\Plugin\Components\Db\PluginModelInterface;
+use SalesRender\Plugin\Components\Db\Model;
+use SalesRender\Plugin\Components\Db\PluginModelInterface;
 
 class TestAnotherPluginModelClass extends Model implements PluginModelInterface
 {

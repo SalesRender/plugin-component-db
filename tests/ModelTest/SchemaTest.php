@@ -1,13 +1,13 @@
 <?php
 
 
-namespace Leadvertex\Plugin\Components\Db\ModelTest;
+namespace SalesRender\Plugin\Components\Db\ModelTest;
 
 
-use Leadvertex\Plugin\Components\Db\Components\TestModelClass;
-use Leadvertex\Plugin\Components\Db\Components\TestPluginModelClass;
-use Leadvertex\Plugin\Components\Db\Components\TestSinglePluginModelClass;
 use PHPUnit\Framework\TestCase;
+use SalesRender\Plugin\Components\Db\Components\TestModelClass;
+use SalesRender\Plugin\Components\Db\Components\TestPluginModelClass;
+use SalesRender\Plugin\Components\Db\Components\TestSinglePluginModelClass;
 
 class SchemaTest extends TestCase
 {

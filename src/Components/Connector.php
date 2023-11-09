@@ -5,7 +5,7 @@
  * @author Timur Kasumov aka XAKEPEHOK
  */
 
-namespace Leadvertex\Plugin\Components\Db\Components;
+namespace SalesRender\Plugin\Components\Db\Components;
 
 
 use Medoo\Medoo;

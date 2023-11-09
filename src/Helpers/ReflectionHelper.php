@@ -4,7 +4,7 @@
  * Datetime: 26.06.2017 1:30
  */
 
-namespace Leadvertex\Plugin\Components\Db\Helpers;
+namespace SalesRender\Plugin\Components\Db\Helpers;
 
 
 use ArrayAccess;

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Leadvertex\Plugin\Components\Db\Helpers;
+namespace SalesRender\Plugin\Components\Db\Helpers;
 
 
 use Ramsey\Uuid\Uuid;

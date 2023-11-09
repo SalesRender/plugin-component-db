@@ -5,7 +5,7 @@
  * @author Timur Kasumov (XAKEPEHOK)
  */
 
-namespace Leadvertex\Plugin\Components\Db\Exceptions;
+namespace SalesRender\Plugin\Components\Db\Exceptions;
 
 
 use Exception;

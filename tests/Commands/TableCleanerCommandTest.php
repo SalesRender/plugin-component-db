@@ -5,13 +5,13 @@
  * @author Timur Kasumov aka XAKEPEHOK
  */
 
-namespace Leadvertex\Plugin\Components\Db\Commands;
+namespace SalesRender\Plugin\Components\Db\Commands;
 
-use Leadvertex\Plugin\Components\Db\Components\Connector;
-use Leadvertex\Plugin\Components\Db\Components\PluginReference;
-use Leadvertex\Plugin\Components\Db\Components\TestModelClass;
 use Medoo\Medoo;
 use PHPUnit\Framework\TestCase;
+use SalesRender\Plugin\Components\Db\Components\Connector;
+use SalesRender\Plugin\Components\Db\Components\PluginReference;
+use SalesRender\Plugin\Components\Db\Components\TestModelClass;
 use Symfony\Component\Console\Tester\CommandTester;
 
 class TableCleanerCommandTest extends TestCase

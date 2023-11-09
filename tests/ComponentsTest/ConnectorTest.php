@@ -1,14 +1,14 @@
 <?php
 
 
-namespace Leadvertex\Plugin\Components\Db\ComponentsTest;
+namespace SalesRender\Plugin\Components\Db\ComponentsTest;
 
 
-use Leadvertex\Plugin\Components\Db\Components\Connector;
-use Leadvertex\Plugin\Components\Db\Components\PluginReference;
 use Medoo\Medoo;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
+use SalesRender\Plugin\Components\Db\Components\Connector;
+use SalesRender\Plugin\Components\Db\Components\PluginReference;
 
 class ConnectorTest extends TestCase
 {

@@ -1,17 +1,17 @@
 <?php
 
 
-namespace Leadvertex\Plugin\Components\Db\ExceptionsTest;
+namespace SalesRender\Plugin\Components\Db\ExceptionsTest;
 
 
 use BadMethodCallException;
-use Leadvertex\Plugin\Components\Db\Commands\CreateTablesCommand;
-use Leadvertex\Plugin\Components\Db\Components\Connector;
-use Leadvertex\Plugin\Components\Db\Components\PluginReference;
-use Leadvertex\Plugin\Components\Db\Components\TestModelClass;
-use Leadvertex\Plugin\Components\Db\Exceptions\DatabaseException;
 use Medoo\Medoo;
 use PHPUnit\Framework\TestCase;
+use SalesRender\Plugin\Components\Db\Commands\CreateTablesCommand;
+use SalesRender\Plugin\Components\Db\Components\Connector;
+use SalesRender\Plugin\Components\Db\Components\PluginReference;
+use SalesRender\Plugin\Components\Db\Components\TestModelClass;
+use SalesRender\Plugin\Components\Db\Exceptions\DatabaseException;
 use Symfony\Component\Console\Tester\CommandTester;
 
 class ExceptionTest extends TestCase
