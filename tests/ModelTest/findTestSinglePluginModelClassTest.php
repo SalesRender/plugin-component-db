@@ -96,7 +96,7 @@ class findTestSinglePluginModelClassTest extends TestCase
 
     public function assertModel($result)
     {
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestSinglePluginModelClass', $result);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestSinglePluginModelClass', $result);
         $this->assertEquals(2, $result->getId());
         $this->assertEquals(10, $result->value_1);
         $this->assertEquals('Hello world', $result->value_2);
@@ -107,7 +107,7 @@ class findTestSinglePluginModelClassTest extends TestCase
         $this->assertCount(1, $results);
         foreach ($results as $result) {
             $this->assertArrayHasKey(2, $results);
-            $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestSinglePluginModelClass', $result);
+            $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestSinglePluginModelClass', $result);
             $this->assertEquals(2, $result->getId());
             $this->assertEquals(10, $result->value_1);
             $this->assertEquals('Hello world', $result->value_2);

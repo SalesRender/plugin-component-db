@@ -30,7 +30,7 @@ class findTestModelClassTest extends TestCase
         $this->assertArrayHasKey('1', $results);
         $this->assertCount(1, $results);
         foreach ($results as $key => $result) {
-            $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestModelClass', $result);
+            $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestModelClass', $result);
             $this->assertEquals(1, $result->getId());
             $this->assertEquals(11, $result->value_1);
             $this->assertEquals('Hello world 1', $result->value_2);
@@ -44,7 +44,7 @@ class findTestModelClassTest extends TestCase
         foreach ($results as $key => $result)
         {
             $this->assertArrayHasKey($key, $results);
-            $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestModelClass', $result);
+            $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestModelClass', $result);
             $this->assertEquals($key, $result->getId());
             $this->assertEquals($key.$key, $result->value_1);
             $this->assertEquals('Hello world', $result->value_2);
@@ -68,7 +68,7 @@ class findTestModelClassTest extends TestCase
         foreach ($results as $key => $result)
         {
             $this->assertArrayHasKey($key, $results);
-            $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestModelClass', $result);
+            $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestModelClass', $result);
             $this->assertEquals($key, $result->getId());
             $this->assertEquals($key.$key, $result->value_1);
             if ($key === 1) {
@@ -94,7 +94,7 @@ class findTestModelClassTest extends TestCase
         foreach ($results as $key => $result)
         {
             $this->assertArrayHasKey($key, $results);
-            $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestModelClass', $result);
+            $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestModelClass', $result);
             $this->assertEquals($key, $result->getId());
             $this->assertEquals($key.$key, $result->value_1);
             $this->assertEquals('Hello world', $result->value_2);
@@ -108,7 +108,7 @@ class findTestModelClassTest extends TestCase
         foreach ($results as $key => $result)
         {
             $this->assertArrayHasKey($key, $results);
-            $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestModelClass', $result);
+            $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestModelClass', $result);
             $this->assertEquals($key, $result->getId());
             $this->assertEquals($key.$key, $result->value_1);
             $this->assertEquals('Hello world', $result->value_2);
@@ -133,7 +133,7 @@ class findTestModelClassTest extends TestCase
     public function testFindById()
     {
         $result = TestModelClass::findById( 1);
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestModelClass', $result);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestModelClass', $result);
         $this->assertEquals(1, $result->getId());
         $this->assertEquals(11, $result->value_1);
         $this->assertEquals('Hello world 1', $result->value_2);

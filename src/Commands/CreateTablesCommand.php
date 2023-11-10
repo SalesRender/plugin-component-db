@@ -30,7 +30,7 @@ class CreateTablesCommand extends Command
     {
         /** @var ModelInterface[] $classes */
         $classes = ClassFinder::getClassesInNamespace(
-            'Leadvertex\Plugin',
+            'SalesRender\Plugin',
             ClassFinder::RECURSIVE_MODE
         );
 

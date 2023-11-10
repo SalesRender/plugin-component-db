@@ -50,7 +50,7 @@ class updateModelsTest extends TestCase
         $this->assertArrayHasKey(11, $results);
         foreach ($results as $result)
         {
-            $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestModelClass', $result);
+            $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestModelClass', $result);
             $this->assertEquals(11, $result->getId());
             $this->assertEquals(12, $result->value_1);
             $this->assertEquals('new text 3', $result->value_2);
@@ -74,7 +74,7 @@ class updateModelsTest extends TestCase
         $model->save();
         TestPluginModelClass::freeUpMemory();
         $result = TestPluginModelClass::findById( 11);
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestPluginModelClass', $result);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestPluginModelClass', $result);
         $this->assertEquals(11, $result->getId());
         $this->assertEquals(12, $result->value_1);
         $this->assertEquals('new text 3', $result->value_2);
@@ -96,7 +96,7 @@ class updateModelsTest extends TestCase
         $model->save();
         TestSinglePluginModelClass::freeUpMemory();
         $result = TestSinglePluginModelClass::find();
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestSinglePluginModelClass', $result);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestSinglePluginModelClass', $result);
         $this->assertEquals(2, $result->getId());
         $this->assertEquals(12, $result->value_1);
         $this->assertEquals('new text 3', $result->value_2);

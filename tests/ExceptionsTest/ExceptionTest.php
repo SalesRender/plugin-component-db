@@ -107,7 +107,7 @@ INSERT INTO "TestModelClass" ("value_1", "value_2", "id") VALUES (11, \'Hello wo
         } catch (BadMethodCallException $e) {
             $result = $e->getMessage();
         }
-        $expected = 'Model::find() can work only with interface Leadvertex\Plugin\Components\Db\SinglePluginModelInterface';
+        $expected = 'Model::find() can work only with interface SalesRender\Plugin\Components\Db\SinglePluginModelInterface';
         $this->assertSame(str_replace("\r", '', $expected), $result);
     }
 }

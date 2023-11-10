@@ -61,7 +61,7 @@ class addModelsTest extends TestCase
         TestModelClass::freeUpMemory();
         $result = TestModelClass::findById( 11);
 
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestModelClass', $result);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestModelClass', $result);
         $this->assertEquals(11, $result->getId());
         $this->assertEquals(11, $result->value_1);
         $this->assertEquals('Hello world 11', $result->value_2);
@@ -83,7 +83,7 @@ class addModelsTest extends TestCase
         $model->save();
         TestModelClass::freeUpMemory();
         $result = TestModelClass::findById( 11);
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestModelClass', $result);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestModelClass', $result);
         $this->assertEquals(11, $result->getId());
         $this->assertEquals(12, $result->value_1);
         $this->assertEquals('Hello world 11', $result->value_2);
@@ -104,7 +104,7 @@ class addModelsTest extends TestCase
         $model->save();
         TestModelClass::freeUpMemory();
         $result = TestModelClass::findById( 11);
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestModelClass', $result);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestModelClass', $result);
         $this->assertEquals(11, $result->getId());
         $this->assertEquals(11, $result->value_1);
         $this->assertEquals('Hello world 11', $result->value_2);
@@ -131,7 +131,7 @@ class addModelsTest extends TestCase
         $model->save();
         TestModelClass::freeUpMemory();
         $result = TestModelClass::findById( 11);
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestModelClass', $result);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestModelClass', $result);
         $this->assertEquals(11, $result->getId());
         $this->assertEquals(12, $result->value_1);
         $this->assertEquals('Hello world 11', $result->value_2);
@@ -149,7 +149,7 @@ class addModelsTest extends TestCase
         TestPluginModelClass::freeUpMemory();
         $result = TestPluginModelClass::findById( 11);
 
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestPluginModelClass', $result);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestPluginModelClass', $result);
         $this->assertEquals(11, $result->getId());
         $this->assertEquals(11, $result->value_1);
         $this->assertEquals('Hello world 11', $result->value_2);
@@ -165,7 +165,7 @@ class addModelsTest extends TestCase
         TestSinglePluginModelClass::freeUpMemory();
         $result = TestSinglePluginModelClass::find();
 
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestSinglePluginModelClass', $result);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestSinglePluginModelClass', $result);
         $this->assertEquals(2, $result->getId());
         $this->assertEquals(11, $result->value_1);
         $this->assertEquals('Hello world 11', $result->value_2);
@@ -186,7 +186,7 @@ class addModelsTest extends TestCase
             $result = $e->getMessage();
         }
 
-        $expected = "Field 'value_2' of 'Leadvertex\Plugin\Components\Db\Components\TestModelWithArrayClass' should be scalar or null";
+        $expected = "Field 'value_2' of 'SalesRender\Plugin\Components\Db\Components\TestModelWithArrayClass' should be scalar or null";
         $this->assertEquals($expected, $result);
     }
 
@@ -210,7 +210,7 @@ class addModelsTest extends TestCase
         TestModelWithAfterAndBeforeClass::freeUpMemory();
         $result = TestModelWithAfterAndBeforeClass::findById($id);
         $this->assertEquals('Find complete', TestModelWithAfterAndBeforeClass::$message);
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestModelWithAfterAndBeforeClass', $result);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestModelWithAfterAndBeforeClass', $result);
         $this->assertEquals(11, $result->getId());
         $this->assertEquals(11, $result->value_1);
         $this->assertEquals('Hello world 11', $result->value_2);
@@ -230,7 +230,7 @@ class addModelsTest extends TestCase
         TestModelWithSubclass::freeUpMemory();
         $result = TestModelWithSubclass::findById($id);
         $this->assertEquals('Find complete', TestModelWithSubclass::$message);
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestModelWithSubclass', $result);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestModelWithSubclass', $result);
         $this->assertEquals(11, $result->getId());
         $this->assertEquals(11, $result->value_1);
         $this->assertEquals('Hello world 11', $result->value_2);
@@ -329,12 +329,12 @@ INSERT INTO "TestSinglePluginModelClass" ("value_1", "value_2", "id", "companyId
         $findModel_1 = TestModelClass::findById(1);
         $findModel_2 = TestModelWithAfterAndBeforeClass::findById(1);
 
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestModelClass', $findModel_1);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestModelClass', $findModel_1);
         $this->assertEquals(1, $findModel_1->getId());
         $this->assertEquals(1, $findModel_1->value_1);
         $this->assertEquals('1', $findModel_1->value_2);
 
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestModelWithAfterAndBeforeClass', $findModel_2);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestModelWithAfterAndBeforeClass', $findModel_2);
         $this->assertEquals(1, $findModel_2->getId());
         $this->assertEquals(2, $findModel_2->value_1);
         $this->assertEquals('2', $findModel_2->value_2);
@@ -359,12 +359,12 @@ INSERT INTO "TestSinglePluginModelClass" ("value_1", "value_2", "id", "companyId
         $findModel_1 = TestPluginModelClass::findById(1);
         $findModel_2 = TestAnotherPluginModelClass::findById(1);
 
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestPluginModelClass', $findModel_1);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestPluginModelClass', $findModel_1);
         $this->assertEquals(1, $findModel_1->getId());
         $this->assertEquals(1, $findModel_1->value_1);
         $this->assertEquals('1', $findModel_1->value_2);
 
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestAnotherPluginModelClass', $findModel_2);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestAnotherPluginModelClass', $findModel_2);
         $this->assertEquals(1, $findModel_2->getId());
         $this->assertEquals(2, $findModel_2->value_1);
         $this->assertEquals('2', $findModel_2->value_2);
@@ -387,12 +387,12 @@ INSERT INTO "TestSinglePluginModelClass" ("value_1", "value_2", "id", "companyId
         $findModel_1 = TestSinglePluginModelClass::find();
         $findModel_2 = TestAnotherSinglePluginModelClass::find();
 
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestSinglePluginModelClass', $findModel_1);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestSinglePluginModelClass', $findModel_1);
         $this->assertEquals(2, $findModel_1->getId());
         $this->assertEquals(1, $findModel_1->value_1);
         $this->assertEquals('1', $findModel_1->value_2);
 
-        $this->assertInstanceOf('Leadvertex\Plugin\Components\Db\Components\TestAnotherSinglePluginModelClass', $findModel_2);
+        $this->assertInstanceOf('SalesRender\Plugin\Components\Db\Components\TestAnotherSinglePluginModelClass', $findModel_2);
         $this->assertEquals(2, $findModel_2->getId());
         $this->assertEquals(2, $findModel_2->value_1);
         $this->assertEquals('2', $findModel_2->value_2);
