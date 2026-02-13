@@ -702,5 +702,5 @@ static guard(Medoo $db): void
 - [Medoo Documentation](https://medoo.in/doc) -- query syntax for `findByCondition()` and `schema()` definitions
 - [Medoo Where Clause](https://medoo.in/api/where) -- full reference for query conditions
 - [Medoo Create Table](https://medoo.in/api/create) -- column definition syntax used in `schema()`
-- `salesrender/plugin-component-settings` -- `Settings` class as a real-world `SinglePluginModelInterface` example
-- `salesrender/plugin-component-access` -- `Registration` class using `SinglePluginModelInterface`
+- [`salesrender/plugin-component-settings`](https://github.com/SalesRender/plugin-component-settings) -- `Settings` class as a real-world `SinglePluginModelInterface` example
+- [`salesrender/plugin-component-access`](https://github.com/SalesRender/plugin-component-access) -- `Registration` class using `SinglePluginModelInterface`
